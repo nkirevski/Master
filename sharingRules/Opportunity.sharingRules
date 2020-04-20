@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Project_Managers</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Project Managers</label>
+        <sharedTo>
+            <group>Project_Managers</group>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Type</field>
+            <operation>equals</operation>
+            <value>Existing Customer - Upgrade</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Inside_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Inside Sales</label>
+        <sharedTo>
+            <group>Inside_Sales</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>
