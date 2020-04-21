@@ -6,6 +6,10 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>HelloWorld</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
         <members>AppSwitcher</members>
         <members>Salesforce1</members>
         <name>AppMenu</name>
